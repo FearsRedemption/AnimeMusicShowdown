@@ -19,14 +19,18 @@ body {
     background-color: var(--raisinBlack);
 }
 
+h1 {
+    padding: 10px;
+    color: var(--redSalsa);
+}
+
 h2 {
     color: var(--unbleachedSilk);
 }
- h1 {
-     color: var(--redSalsa);
- }
 
  #pokeTitle {
-     color: black;
+     display: inline-flex;
+     color: white;
      background: linear-gradient(0.25turn, var(--scarlet), var(--violet));
+     text-shadow: -1px 1px 2px black, 1px 1px 2px black, 1px -1px 0 black, -1px -1px 0 black;
  }
