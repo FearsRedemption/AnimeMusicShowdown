@@ -1,8 +1,32 @@
 @font-face {
     font-family: hack;
-    src: url(https://raw.githack.com/FearsRedemption/FearsRedemptionDiscordTheme/main/fonts/Hack-Regular-webfont.ttf);
+    src: url(https://raw.githack.com/FearsRedemption/jamsandtoast/main/fonts/Hack-Regular-webfont.ttf);
+}
+
+:root {
+    --scarlet: #FF2400;
+    --violet: #8F00FF;
+
+    /* Color Palette */
+    --raisinBlack: #1B191C;
+    --unbleachedSilk: #F4D8CD;
+    --middleYellowRed: #EDB183;
+    --redSalsa: #F15152;
+    --grayWeb: #797B84;
 }
 
 body {
-    background-color: #1B191C;
+    background-color: var(--raisinBlack);
 }
+
+h2 {
+    color: var(--unbleachedSilk);
+}
+ h1 {
+     color: var(--redSalsa);
+ }
+
+ #pokeTitle {
+     color: black;
+     background: linear-gradient(0.25turn, var(--scarlet), var(--violet));
+ }
