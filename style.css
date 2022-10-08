@@ -1,0 +1,8 @@
+@font-face {
+    font-family: hack;
+    src: url(https://raw.githack.com/FearsRedemption/FearsRedemptionDiscordTheme/main/fonts/Hack-Regular-webfont.ttf);
+}
+
+body {
+    background-color: #1B191C;
+}
