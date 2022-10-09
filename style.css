@@ -33,7 +33,7 @@ h2 {
     color: var(--unbleachedSilk);
 }
 
-#pokeTitle {
+#pokeLine {
     padding: 10px;
     display: inline-flex;
     color: white;
@@ -42,7 +42,11 @@ h2 {
 }
 
 .pokemonTM {
-     font-family: Pokemon;
+    font-family: Pokemon, serif;
+}
+
+.pokeTitle {
+    padding-top: 38px;
 }
 
 
