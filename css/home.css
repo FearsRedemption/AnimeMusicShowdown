@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Midorima;
+    src: url(https://raw.githack.com/FearsRedemption/jamsandtoast/main/fonts/Midorima-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: -1px 1px 2px black, 1px 1px 2px black, 1px -1px 0 black, -1px -1px 0 black;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/amsBackground.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    font-family: Midorima, sans-serif;
+    color: deepskyblue;
+    font-size: 28px;
+}
+
+span {
+    font-family: Midorima, sans-serif;
+    color: deeppink;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: deepskyblue;
+    transition: 0.3s;
+}
+button {
+    border: none;
+    background: deepskyblue;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.4s;
+}
+button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
