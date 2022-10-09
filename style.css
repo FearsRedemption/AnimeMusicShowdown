@@ -1,6 +1,9 @@
 @font-face {
-    font-family: hack;
-    src: url(https://raw.githack.com/FearsRedemption/jamsandtoast/main/fonts/Hack-Regular-webfont.ttf);
+    /*font-family: hack;*/
+    /*src: url(https://raw.githack.com/FearsRedemption/jamsandtoast/main/fonts/Hack-Regular-webfont.ttf);*/
+
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    src: url()
 }
 
 :root {
