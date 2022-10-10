@@ -11,14 +11,32 @@
   <div class="hero">
     <nav>
       <h2 class="logo">Anime <span>Music</span> Showdown</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-  <!--      <li><a href="#">About</a></li>-->
-        <li><a href="countdown.html">Countdowns</a></li>
-  <!--      <li><a href="#">Contact Us</a></li>-->
-      </ul>
-      <button id="playButton" type="button">Work In Progress...</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!--      <li><a href="#">About</a></li>-->
+          <li><a href="countdown.html">Countdowns</a></li>
+          <!--      <li><a href="#">Contact Us</a></li>-->
+        </ul>
+      <button id="playButton" type="button">Music Paused...</button>
     </nav>
   </div>
+  <audio id="player" loop>
+    <source src="songs/kawaii-friends.mp3" type="audio/mp3">
+  </audio>
+  <script>
+    var audio = document.getElementById("player");
+    var button = document.getElementById("playButton");
+    audio.volume = 0.2;
+
+    button.onclick = function() {
+      if (audio.paused) {
+        audio.play();
+        button.textContent = "Music Playing...";
+      } else {
+        audio.pause();
+        button.textContent = "Music Paused..."
+      }
+    }
+  </script>
 </body>
 </html>
