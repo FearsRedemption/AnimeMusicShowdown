@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/home.css">
     <title>Anime Music Showdown</title>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=JoseFin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <h2 class="logo">Anime <span>Music</span> Showdown</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-<!--                <li><a href="#">About</a></li>-->
-                <li><a href="countdown.html">Countdowns</a></li>
-<!--                <li><a href="#">Contact Us</a></li>-->
-            </ul>
-            <button type="button">Work In Progress</button>
-        </nav>
-    </div>
-
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("desktopNav.html");
+        });
+    </script>
+    <iframe src="songs/silence.mp3" allow="autoplay" id="audio" hidden></iframe>
+    <audio id="player" autoplay hidden>
+        <source src="songs/kawaii-friends.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var audio = document.getElementById("player");
+        audio.volume = 0.2;
+    </script>
 </body>
 </html>
