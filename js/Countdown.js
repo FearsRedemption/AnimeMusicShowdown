@@ -1,4 +1,4 @@
-function getCountdown(date, id) {
+function getCountdown(date, id, timeUpInfo) {
     // The data/time we want to countdown to
     var countDownDate = new Date(date).getTime();
 
@@ -20,7 +20,7 @@ function getCountdown(date, id) {
         // Display the message when countdown is over
         if (timeleft < 0) {
             clearInterval(myfunc);
-            document.getElementById(id).innerHTML = "TIMES UP!!"
+            document.getElementById(id).innerHTML = timeUpInfo == null ? "The Con Has Arrived" : timeUpInfo
         }
     }, 1000);
 }
